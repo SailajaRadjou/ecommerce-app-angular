@@ -1,0 +1,13 @@
+.text-muted{
+    color: #fff !important;
+    font-size: 1.5rem;
+}
+.text-muted:hover{
+    color: #65000B !important;
+}
+i{
+    font-size: 1.6rem;
+}
+span{
+    font-size: 1.2rem !important;
+}
