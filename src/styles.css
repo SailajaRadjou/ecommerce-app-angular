@@ -1,32 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-h1{
-    color: green;
-}
-p{
-    color: brown;
-}
-h3{
-    color: purple;
-}
-h4{
-    color: orangered;
-}
+
 img{
-    object-fit: cover;
-    width: 400px;
-    height: 600px;
-    
-}
-.product_container{
-    display: flex;
-    align-items: stretch;
-    flex-direction: row;
-    padding: 10px;
-}
-.image_container{
-    border: .5px solid rgb(180, 179, 179);
-    padding: 10px;
-}
-.product_details{
-    
+    height: 400px;
 }
