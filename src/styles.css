@@ -11,8 +11,9 @@ h3{
     
 }
 
-img{
+.img_list{
     height: 400px;
+    object-fit: cover;
 }
 
 .logo_title{

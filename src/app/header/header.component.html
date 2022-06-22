@@ -1,5 +1,5 @@
 <header>  
-  <div class="header text-center header_bg">
+  <div class="header text-center header_bg" (click)="goHome()">
     <div class="text-center logo">      
         <img src="https://www.KrishnaJewellers.com/images/krishnajewellers-mobile-logo.svg" alt="" class="diplay_logo">
         <h1 class="logo_title">Diamond Dreams</h1>
@@ -11,7 +11,7 @@
           <ol class="breadcrumb ">
               <li>
                   <div>
-                    <a href="#" title="Home" class="breadcrumb-item">Home </a>
+                    <a href="" title="Home" class="breadcrumb-item" (click)="goHome()">Home </a>
                     <span class="bread_divider">  / </span>
                     <span title="Gold Jewellery" class="breadcrumb-item" active="">Gold Jewellery</span>
                   </div>
@@ -20,10 +20,5 @@
       </nav>
    
   </section>
-  <!-- Background image -->
-  <div class="p-5 text-center bg_image jumbotron text-white jumbotron-image shadow">   
-    
-  </div>
-  <!-- Background image -->
   
 </header>
