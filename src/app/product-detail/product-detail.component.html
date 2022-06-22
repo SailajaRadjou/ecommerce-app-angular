@@ -10,9 +10,11 @@
             <p class="card-text">                           
             <p>{{currentProduct.discription}}</p>
             <p>Marque : {{currentProduct.marque}}</p>
-            <p><b>Prix : {{currentProduct.prix}}</b></p>
-            <p class="card-text"><small class="text-muted">Categorie : {{currentProduct.categorie}}</small></p>
+            <p><b>Prix : {{currentProduct.prix | currency: 'EUR'}}</b></p>
+            <p class="card-text">Categorie : {{currentProduct.categorie}}</p>
+            <p class="card-text"><small class="text-muted">Created on : {{currentProduct.dateCreation | date}}</small></p>
             </div>
+            <p class="buttons"><a class="btn btn-outline-secondary" (click)="goHome()">Retour</a></p>   
         </div>
         </div>
     </div>

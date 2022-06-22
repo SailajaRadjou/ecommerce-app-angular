@@ -15,7 +15,7 @@
           <img [src]="product.image" class="card-img-top img_list" alt="...">
           <div class="card-body text-center text">
             <h5 class="card-title">{{ product.nom}}</h5>
-            <p class="card-text">{{ product.prix }}</p>
+            <p class="card-text">{{ product.prix  | currency: 'EUR' }}</p>
             <p class="buttons"><a class="btn btn-outline-secondary" (click)="goToProduct(product)">View detail</a></p>
           </div>          
         </div>

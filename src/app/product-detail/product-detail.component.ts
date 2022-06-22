@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Product } from '../product/Product';
 import { PRODUCTS } from '../product/product-datas';
+import { Location } from '@angular/common';
+
 
 @Component({
   selector: 'app-product-detail',
@@ -12,8 +14,8 @@ export class ProductDetailComponent implements OnInit {
 
   products: Product[];
   currentProduct: Product | undefined;
-  
-  constructor(private route: ActivatedRoute) {
+    
+  constructor(private route: ActivatedRoute, private location: Location) {
     
    }
 
@@ -30,6 +32,9 @@ export class ProductDetailComponent implements OnInit {
       
     }
     
+  }
+  goHome() : void{
+    this.location.back();
   }
   
 
