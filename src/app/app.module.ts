@@ -11,6 +11,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FormsModule } from '@angular/forms';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { DisplayCategoryComponent } from './display-category/display-category.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
     HeaderComponent,
     ProductDetailComponent,
     PageNotFoundComponent,
-    NavBarComponent
+    NavBarComponent,
+    DisplayCategoryComponent
   ],
   imports: [
     BrowserModule,

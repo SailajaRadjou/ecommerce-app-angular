@@ -12,11 +12,11 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle menu_text" data-bs-toggle="dropdown">Categorie</a>
                         <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item categ_text">Necklace</a>
-                            <a href="#" class="dropdown-item categ_text">Bangles</a>
-                            <a href="#" class="dropdown-item categ_text">Earrings</a>
-                            <a href="#" class="dropdown-item categ_text">Rings</a>
-                            <a href="#" class="dropdown-item categ_text">Pendant</a>                            
+                            <a class="dropdown-item categ_text" id="necklace" name="Necklace" #necklace (click)="getCategory(necklace)">Necklace</a>
+                            <a class="dropdown-item categ_text" id="bangles" name="Bangles" #bangles (click)="getCategory(bangles)">Bangles</a>
+                            <a class="dropdown-item categ_text" id="earrings" name="Earrings" #earrings (click)="getCategory(earrings)">Earrings</a>
+                            <a class="dropdown-item categ_text" id="rings" name="Rings" #rings (click)="getCategory(rings)" >Rings</a>
+                            <a class="dropdown-item categ_text" id="pendant" name="Pendant" #pendant (click)="getCategory(pendant)">Pendant</a>                            
                         </div>
                     </div>
                     <a href="#" class="nav-item nav-link disabled" tabindex="-1">About us</a>

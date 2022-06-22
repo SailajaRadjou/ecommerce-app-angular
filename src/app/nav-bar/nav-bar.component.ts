@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class NavBarComponent implements OnInit {
 
+  category: string;
   inputSearch: number;
   constructor(private router: Router) { }
 
@@ -26,6 +27,11 @@ export class NavBarComponent implements OnInit {
     //   window.location.reload();
     // });
     
+  }
+
+  getCategory(categ: any){
+    console.log(categ.name);
+    this.router.navigate(['category/', categ.name]);
   }
 
 }
