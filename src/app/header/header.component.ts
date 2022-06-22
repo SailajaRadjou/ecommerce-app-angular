@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, NavigationEnd, Router, UrlSerializer } from '@angular/router';
+import { NavigationEnd, Router} from '@angular/router';
 import { Product } from '../product/Product';
 import { PRODUCTS } from '../product/product-datas';
-import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -14,7 +13,7 @@ export class HeaderComponent implements OnInit {
   product: Product[];
   inputSearch: number;
   someSubscription: any;
-  constructor(private route: ActivatedRoute, private router: Router) {
+  constructor(private router: Router) {
     this.router.routeReuseStrategy.shouldReuseRoute = function () {
       return false;
     };
@@ -38,17 +37,6 @@ export class HeaderComponent implements OnInit {
 
   goHome() :void{
     this.router.navigate(['productlist']);
-  }
-
-  searchProduct(){
-    console.log(this.inputSearch);
-    
-    //this.products = PRODUCTS;
-    this.router.navigate(['productdetail/', this.inputSearch]);
-    // .then(() => {
-    //   window.location.reload();
-    // });
-    
-  }
+  }  
 
 }
