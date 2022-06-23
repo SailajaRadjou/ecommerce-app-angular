@@ -7,5 +7,5 @@ export class Product{
     image: string; 
     categorie: string; 
     dateCreation: Date;
-
+    offer:string;
 }

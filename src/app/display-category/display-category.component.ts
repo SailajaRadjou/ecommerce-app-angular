@@ -6,15 +6,14 @@ import { PRODUCTS } from '../product/product-datas';
 @Component({
   selector: 'app-display-category',
   templateUrl:'display-category.component.html',
-  styles: [
-  ]
+  styleUrls: ['../product-list/product-list.component.css']
 })
 export class DisplayCategoryComponent implements OnInit {
  
 
   products: Product[];
-  getProducts: Product[] | any;
-  product: Product;
+  getProducts: Product[] | any = [];
+  product: Product | undefined;
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -25,17 +24,12 @@ export class DisplayCategoryComponent implements OnInit {
     
     this.products.forEach(product => {
       if (prodCategory == product.categorie) {
-      this.getProducts=product;
-       console.table(this.getProducts);
-      }  
+      this.getProducts.push(product);
+       
+      } 
+       
     });
-
-    // for (let i in this.products) {
-    //   if (prodCategory == this.product[i].categorie) {
-    //       this.getProducts.push(this.product[i]);
-    //        console.log(this.getProducts);
-    //       }  
-    // }
+    console.table(this.getProducts);   
     
   }
 

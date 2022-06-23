@@ -12,6 +12,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FormsModule } from '@angular/forms';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { DisplayCategoryComponent } from './display-category/display-category.component';
+import { BorderCardDirective } from './border-card.directive';
+import { ProductTypeColorPipe } from './product-type-color.pipe';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { DisplayCategoryComponent } from './display-category/display-category.co
     ProductDetailComponent,
     PageNotFoundComponent,
     NavBarComponent,
-    DisplayCategoryComponent
+    DisplayCategoryComponent,
+    BorderCardDirective,
+    ProductTypeColorPipe,
+   
   ],
   imports: [
     BrowserModule,
