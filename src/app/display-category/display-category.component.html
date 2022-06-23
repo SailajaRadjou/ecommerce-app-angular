@@ -17,7 +17,7 @@
             <div class="card-body text-center text">
                 <h5 class="card-title">{{ product.nom}}</h5>
                 <p class="card-text">{{ product.prix  | currency: 'EUR' }}</p>
-                <p class="buttons"><a class="btn btn-outline-secondary">View detail</a></p>
+                <p class="buttons"><a class="btn btn-outline-secondary" (click)="goToProduct(product)">View detail</a></p>
             </div>          
             </div>
         </div>

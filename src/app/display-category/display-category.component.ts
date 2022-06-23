@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from '../product/Product';
 import { PRODUCTS } from '../product/product-datas';
 
@@ -14,7 +14,7 @@ export class DisplayCategoryComponent implements OnInit {
   products: Product[];
   getProducts: Product[] | any = [];
   product: Product | undefined;
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
 
@@ -31,6 +31,9 @@ export class DisplayCategoryComponent implements OnInit {
     });
     console.table(this.getProducts);   
     
+  }
+  goToProduct(product: Product){
+    this.router.navigate(['productdetail/', product.id]);
   }
 
 }

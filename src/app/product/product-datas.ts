@@ -10,8 +10,8 @@ export const PRODUCTS : Product[] = [
         image: `https://www.infinitijewels.com.sg/wp-content/uploads/2021/11/J1716.png`,
         categorie: 'Pendant', 
         dateCreation: new Date,
-        offer: '-30%'
-
+        offer: 30, 
+        reduction: 380-((30/100)*380)
     },
     {
         id: 2, 
@@ -22,7 +22,8 @@ export const PRODUCTS : Product[] = [
         image: `https://sothebys-md.brightspotcdn.com/dims4/default/1f4ebed/2147483647/strip/true/crop/2000x2000+0+0/resize/2048x2048!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2F27%2Fc1%2F24e70d9e422098bc8fab670e1d3c%2Fl21056-by3kp-1.jpg`,
         categorie: 'Earrings', 
         dateCreation: new Date,
-        offer: '-10%'
+        offer: 10,
+        reduction: 938-((10/100)*938)
     },
     {
         id: 3, 
@@ -33,7 +34,8 @@ export const PRODUCTS : Product[] = [
         image: `https://www.infinitijewels.com.sg/wp-content/uploads/2021/07/J15151.png`,
         categorie: 'Rings', 
         dateCreation: new Date,
-        offer: ''
+        offer: 0,
+        reduction: 0
     },
     {
         id: 4, 
@@ -44,7 +46,8 @@ export const PRODUCTS : Product[] = [
         image: `https://img1.krishnajewellers.com/DealImages/11010/LargeImages/16.jpg`,
         categorie: 'Bangles', 
         dateCreation: new Date,
-        offer: '-50%'
+        offer: 50,
+        reduction: 735-((50/100)*735)
     },
     {
         id: 5, 
@@ -55,7 +58,8 @@ export const PRODUCTS : Product[] = [
         image: `https://img1.krishnajewellers.com/DealImages/10476/LargeImages/buy_diamond_jhumkas.jpg`,
         categorie: 'Earrings', 
         dateCreation: new Date,
-        offer: ''
+        offer: 0,
+        reduction: 0
     },
     {
         id: 6, 
@@ -66,7 +70,8 @@ export const PRODUCTS : Product[] = [
         image: `https://img1.krishnajewellers.com/DealImages/10432/LargeImages/diamond_choker_design_online.jpg`,
         categorie: 'Necklace', 
         dateCreation: new Date,
-        offer: '-20%'
+        offer: 20,
+        reduction: 988-((20/100)*988)
     },
 
     {
@@ -78,7 +83,8 @@ export const PRODUCTS : Product[] = [
         image: `https://img1.krishnajewellers.com/DealImages/10836/LargeImages/d_rv_19.jpg`,
         categorie: 'Bangles', 
         dateCreation: new Date,
-        offer: ''
+        offer: 0,
+        reduction: 0
     },
     {
         id: 8, 
@@ -89,7 +95,8 @@ export const PRODUCTS : Product[] = [
         image: `https://www.lialijewellery.com/media/catalog/product/cache/1221331df2bec2255dbb827748d8a552/a/n/ank0007162_final_edited_smaller.jpg`,
         categorie: 'Necklace', 
         dateCreation: new Date,
-        offer: '-60%'
+        offer: 60,
+        reduction: 599-((60/100)*599)
     },
     {
         id: 9, 
@@ -100,7 +107,8 @@ export const PRODUCTS : Product[] = [
         image: `https://ae01.alicdn.com/kf/HTB1mk1JCKSSBuNjy0Flq6zBpVXaE/weibang-Silver-Color-Zircon-Necklace-Earrings-Set-for-Women-Bride-Bridesmaid-Imitation-Pearl-Jewelry-Set-Gift.jpg`,
         categorie: 'Necklace', 
         dateCreation: new Date,
-        offer: '-20%'
+        offer: 20,
+        reduction: 499-((20/100)*499)
     }
 
 ]

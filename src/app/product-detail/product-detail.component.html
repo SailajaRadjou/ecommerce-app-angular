@@ -10,7 +10,8 @@
             <p class="card-text">                           
             <p>{{currentProduct.discription}}</p>
             <p>Marque : {{currentProduct.marque}}</p>
-            <p><b>Prix : {{currentProduct.prix | currency: 'EUR'}}</b></p>
+            <p>Prix :<b class="{{currentProduct.offer | offerRate}}">{{currentProduct.prix | currency: 'EUR'}}</b><span *ngIf="currentProduct.offer != 0"><b>  -{{currentProduct.offer}}%</b></span></p>
+            <span *ngIf="currentProduct.reduction != 0"><b>{{currentProduct.reduction | currency: 'EUR'}}</b></span>
             <p class="card-text">Categorie : {{currentProduct.categorie}}</p>
             <p class="card-text"><small class="text-muted">Created on : {{currentProduct.dateCreation | date}}</small></p>
             </div>
