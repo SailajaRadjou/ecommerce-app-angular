@@ -34,4 +34,8 @@ export class NavBarComponent implements OnInit {
     this.router.navigate(['category/', categ.name]);
   }
 
+  listOffer(){
+    this.router.navigate(['offerlist']);
+  }
+
 }

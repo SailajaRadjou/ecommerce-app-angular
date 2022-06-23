@@ -6,7 +6,7 @@ import { PRODUCTS } from '../product/product-datas';
 @Component({
   selector: 'app-display-category',
   templateUrl:'display-category.component.html',
-  styleUrls: ['../product-list/product-list.component.css']
+  styleUrls: ['display-category.component.css','../product-list/product-list.component.css']
 })
 export class DisplayCategoryComponent implements OnInit {
  

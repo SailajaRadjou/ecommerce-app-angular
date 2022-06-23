@@ -14,6 +14,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { DisplayCategoryComponent } from './display-category/display-category.component';
 import { BorderCardDirective } from './border-card.directive';
 import { ProductTypeColorPipe } from './product-type-color.pipe';
+import { OfferListComponent } from './offer-list/offer-list.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { ProductTypeColorPipe } from './product-type-color.pipe';
     DisplayCategoryComponent,
     BorderCardDirective,
     ProductTypeColorPipe,
+    OfferListComponent,
    
   ],
   imports: [
