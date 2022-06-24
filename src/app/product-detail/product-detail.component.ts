@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Product } from '../product/Product';
 import { PRODUCTS } from '../product/product-datas';
 import { Location } from '@angular/common';
-
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -14,8 +14,8 @@ export class ProductDetailComponent implements OnInit {
 
   products: Product[];
   currentProduct: Product | undefined;
-    
-  constructor(private route: ActivatedRoute, private location: Location) {
+  
+  constructor(private route: ActivatedRoute, private location: Location, private cartService: CartService) {
     
    }
 
@@ -36,6 +36,11 @@ export class ProductDetailComponent implements OnInit {
   goHome() : void{
     this.location.back();
   }
-  
+  addToCart(product: Product){
+    
+    console.log(product);
+    this.cartService.addToCart(product);
+    window.alert('Your product has been added to the cart!');
+  }
 
 }

@@ -1,36 +1,18 @@
 <header>  
-  <div class="header text-center header_bg" (click)="goHome()">
-    <div class="text-center logo">      
-        <img src="https://www.KrishnaJewellers.com/images/krishnajewellers-mobile-logo.svg" alt="" class="diplay_logo">
-        <h1 class="logo_title">Diamond Dreams</h1>
-    </div>        
+  <div class="row header text-center header_bg" (click)="goHome()">
+      <div class="col-md-10 text-center logo">      
+          <img src="https://www.KrishnaJewellers.com/images/krishnajewellers-mobile-logo.svg" alt="" class="diplay_logo">
+          <h1 class="logo_title">Diamond Dreams</h1>
+      </div>   
+      <div class="col-md-2 cart_div" style="text-align: end;">
+          <a class="btn cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="item_count">{{itemCount()}}</span>
+          </a>
+           
+      </div>    
   </div>
-  <app-nav-bar></app-nav-bar>
-
-  <!-- <section class="breadCurmb breadCurmb-list">
-    
-      <nav aria-label="breadcrumb" class="d-flex justify-content-between">
-          <ol class="breadcrumb ">
-              <li>
-                  <div>
-                    <a href="" title="Home" class="breadcrumb-item" (click)="goHome()">Home </a>
-                    <span class="bread_divider">  / </span>
-                    <span title="Gold Jewellery" class="breadcrumb-item" active="">Gold Jewellery</span>
-                  </div>
-              </li>
-          </ol>
-
-         
-          <div class="form-inline d-flex search_display">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="inputSearch" name="inputSearch" [(ngModel)]="inputSearch">
-            <button type="button" class="btn btn-primary my-1 my-sm-0" (click)="searchProduct()">
-            
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-      </nav>
-      
-   
-  </section> -->
+  
+  <app-nav-bar></app-nav-bar> 
   
 </header>

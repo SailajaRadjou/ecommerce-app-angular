@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router} from '@angular/router';
 import { Product } from '../product/Product';
 import { PRODUCTS } from '../product/product-datas';
-
+import { CartService } from '../services/cart.service';
 @Component({
   selector: 'app-header',
   templateUrl: 'header.component.html',
@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
   product: Product[];
   inputSearch: number;
   someSubscription: any;
-  constructor(private router: Router) {
+  constructor(private router: Router, private cartservice: CartService) {
     this.router.routeReuseStrategy.shouldReuseRoute = function () {
       return false;
     };
@@ -38,5 +38,9 @@ export class HeaderComponent implements OnInit {
   goHome() :void{
     this.router.navigate(['productlist']);
   }  
+
+  itemCount(){
+    return this.cartservice.itemsCount();
+  }
 
 }

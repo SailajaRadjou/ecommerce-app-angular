@@ -1,12 +1,37 @@
-
+.logo{
+   position:relative;
+   left: 165px;
+  
+}
 .diplay_logo{
     height: 100px;
 }
 
 .header_bg{
+    
     background-color: #65000B;
 }
 
 .search_display{
     height: 35px;
+}
+
+.cart_div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.cart{
+    font-size: 30px;
+    color: #d2ab67;
+    font-weight: 800;
+    
+}
+
+.item_count{
+    position: relative;
+    top: -26px;
+    left: -20px;
+    font-size: 22px;
 }

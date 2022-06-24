@@ -12,7 +12,7 @@
   <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
         <div class="col" *ngFor="let product of getProducts">            
             <div class="card" appBorderCard = 'red'>
-              <div class="discount" *ngIf="product.offer">{{product.offer}}</div>
+              <div class="discount" *ngIf="product.offer">-{{product.offer}}%</div>
             <img [src]="product.image" class="card-img-top img_list" alt="...">
             <div class="card-body text-center text">
                 <h5 class="card-title">{{ product.nom}}</h5>

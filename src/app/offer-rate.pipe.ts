@@ -9,7 +9,7 @@ export class OfferRatePipe implements PipeTransform {
 
     let strike: string = '';
     if (offer!=0) {
-      strike = 'text-decoration-line-through';
+      strike = 'text-decoration-line-through text-danger';
     } else {
       strike = 'text-decoration-none';
     }
