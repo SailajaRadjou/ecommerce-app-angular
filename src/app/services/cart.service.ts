@@ -6,7 +6,7 @@ import { Product } from '../product/Product';
 export class CartService {
 
   items: Product[] = [];
-
+  total: number = 0;
   constructor() { }
 
   addToCart(product: Product) {
@@ -17,6 +17,12 @@ export class CartService {
     return this.items;
   }
 
+  totalAmount(){
+    this.items.map(value =>{
+      this.total = this.total + value.reduction;
+   });
+    return this.total;
+  }
   itemsCount(){
     return this.items.length;
   }
@@ -26,3 +32,7 @@ export class CartService {
     return this.items;
   }
 }
+function item(item: any, items: Product[]) {
+  throw new Error('Function not implemented.');
+}
+

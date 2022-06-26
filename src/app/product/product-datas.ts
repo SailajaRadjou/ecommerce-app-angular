@@ -35,7 +35,7 @@ export const PRODUCTS : Product[] = [
         categorie: 'Rings', 
         dateCreation: new Date,
         offer: 0,
-        reduction: 0
+        reduction: 668.00-0
     },
     {
         id: 4, 
@@ -59,7 +59,7 @@ export const PRODUCTS : Product[] = [
         categorie: 'Earrings', 
         dateCreation: new Date,
         offer: 0,
-        reduction: 0
+        reduction: 838.00-0
     },
     {
         id: 6, 
@@ -84,7 +84,7 @@ export const PRODUCTS : Product[] = [
         categorie: 'Bangles', 
         dateCreation: new Date,
         offer: 0,
-        reduction: 0
+        reduction: 635.00-0
     },
     {
         id: 8, 

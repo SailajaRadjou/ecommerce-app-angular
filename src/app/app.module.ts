@@ -16,6 +16,7 @@ import { BorderCardDirective } from './border-card.directive';
 
 import { OfferListComponent } from './offer-list/offer-list.component';
 import { OfferRatePipe } from './offer-rate.pipe';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -29,8 +30,9 @@ import { OfferRatePipe } from './offer-rate.pipe';
     NavBarComponent,
     DisplayCategoryComponent,
     BorderCardDirective,    
-    OfferListComponent, OfferRatePipe,
-   
+    OfferListComponent, 
+    OfferRatePipe, 
+    CartComponent   
   ],
   imports: [
     BrowserModule,

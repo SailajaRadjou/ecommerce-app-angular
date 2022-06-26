@@ -1,11 +1,11 @@
 <header>  
-  <div class="row header text-center header_bg" (click)="goHome()">
-      <div class="col-md-10 text-center logo">      
+  <div class="row header text-center header_bg">
+      <div class="col-md-10 text-center logo" (click)="goHome()">      
           <img src="https://www.KrishnaJewellers.com/images/krishnajewellers-mobile-logo.svg" alt="" class="diplay_logo">
           <h1 class="logo_title">Diamond Dreams</h1>
       </div>   
       <div class="col-md-2 cart_div" style="text-align: end;">
-          <a class="btn cart">
+          <a class="btn cart"  routerLink="/cart">
             <i class="fa-solid fa-cart-shopping"></i>
             <span class="item_count">{{itemCount()}}</span>
           </a>

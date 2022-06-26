@@ -11,7 +11,7 @@
                 <p>{{currentProduct.discription}}</p>
                 <p>Brand : {{currentProduct.marque}}</p>
                 <p>Price :&nbsp;&nbsp;  <b class="{{currentProduct.offer | offerRate}}">{{currentProduct.prix | currency: 'EUR'}}</b><span *ngIf="currentProduct.offer != 0"><b style="color: #008200;">&nbsp;&nbsp;&nbsp;-{{currentProduct.offer}}%</b></span></p>
-                <span *ngIf="currentProduct.reduction != 0"><b style="color: #191970;">{{currentProduct.reduction | currency: 'EUR'}}</b></span>
+                <span *ngIf="currentProduct.reduction != currentProduct.prix"><b style="color: #191970;">{{currentProduct.reduction | currency: 'EUR'}}</b></span>
                 <p class="card-text">Category : {{currentProduct.categorie}}</p>
                 <p class="card-text"><small class="text-muted">Created on : {{currentProduct.dateCreation | date}}</small></p>
                 </div>
