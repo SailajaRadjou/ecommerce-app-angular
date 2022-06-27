@@ -30,3 +30,7 @@ body{
 a{
     cursor: pointer;
 }
+.btn_display{
+    font-size: 1.5rem;
+    font-weight: 600;
+}

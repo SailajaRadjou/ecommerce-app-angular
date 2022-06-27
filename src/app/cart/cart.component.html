@@ -1,5 +1,17 @@
-
-<div class="container-fluid text-center">
+<div class="container" *ngIf="items.length == 0">
+    <div class="card">
+        <div class="card-header">
+        No Items Found
+        </div>
+        <div class="card-body">
+        <h3 class="title-center">Sorry! Your Cart is Empty</h3>
+        <p class="card-text">No Items Found</p>
+        
+        <a routerLink="/" class="btn btn_display" style="background-color: #C04000; color: white;">Home Page</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid text-center" *ngIf="items.length > 0">
     <h3>View Cart</h3>
     <table class="table align-middle mb-0 bg-white">
         <thead class="bg-light">
@@ -52,5 +64,16 @@
                 <td colspan="2">{{total}}</td>  
             </tr>
         </tbody>
-    </table>
+    </table>   
+       
+        <div class="col-12 mt-5">
+            <button class="btn btn-warning m-5 text-white btn_display" type="submit" routerLink="/">Cancel</button>
+            <button class="btn btn-success m-5 btn_display" type="submit" (click)="show()">Order now</button>
+        </div>    
+    
+</div>
+<div class="container" *ngIf="isShown">
+    
+    <app-form-validation></app-form-validation>
+    
 </div>

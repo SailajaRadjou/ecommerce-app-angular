@@ -1,0 +1,31 @@
+
+    <form class="row g-3 mt-5">
+        <div class="col-md-6">
+          <label for="validationDefault01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationDefault01" placeholder="First name" required name="fname" [(ngModel)]="fname">
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" required name="lname" [(ngModel)]="lname">
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefaultUsername" class="form-label">E-mail</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            <input type="text" class="form-control" placeholder="Email address" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required name="email" [(ngModel)]="email">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationDefault03" required name="city" [(ngModel)]="city">
+        </div>
+        
+        <div class="col-md-4">
+          <label for="validationDefault05" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="validationDefault05" required name="zip" [(ngModel)]="zip">
+        </div>
+        
+        <div class="col-12">
+          <button type="submit" class="btn btn_display mt-5" style="background-color: #8B0000; color: white;" (click)="submit()">Submit</button>
+        </div>
+      </form>

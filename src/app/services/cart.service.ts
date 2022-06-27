@@ -21,7 +21,7 @@ export class CartService {
     this.items.map(value =>{
       this.total = this.total + value.reduction;
    });
-    return this.total;
+    return this.total.toFixed(2);
   }
   itemsCount(){
     return this.items.length;

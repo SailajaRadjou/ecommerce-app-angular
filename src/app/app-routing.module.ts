@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CartComponent } from './cart/cart.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { DisplayCategoryComponent } from './display-category/display-category.component';
 import { OfferListComponent } from './offer-list/offer-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'productdetail/:id', component: ProductDetailComponent},
   {path: 'category/:category', component: DisplayCategoryComponent},
   {path: 'cart', component: CartComponent},
+  {path: 'confirmation/:name', component: ConfirmationComponent},
   {path: '', redirectTo: 'productlist', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent}
 ];

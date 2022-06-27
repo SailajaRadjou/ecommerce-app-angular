@@ -17,7 +17,8 @@ import { BorderCardDirective } from './border-card.directive';
 import { OfferListComponent } from './offer-list/offer-list.component';
 import { OfferRatePipe } from './offer-rate.pipe';
 import { CartComponent } from './cart/cart.component';
-
+import { FormValidationComponent } from './form-validation/form-validation.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,9 @@ import { CartComponent } from './cart/cart.component';
     BorderCardDirective,    
     OfferListComponent, 
     OfferRatePipe, 
-    CartComponent   
+    CartComponent,
+    FormValidationComponent,
+    ConfirmationComponent  
   ],
   imports: [
     BrowserModule,

@@ -8,12 +8,19 @@ import { CartService } from '../services/cart.service';
 })
 export class CartComponent implements OnInit {
 
-  
+ 
   constructor(private cartService: CartService) { }
   items = this.cartService.getItems();
   total = this.cartService.totalAmount();
   ngOnInit(): void {
     
   }
+  isShown: boolean = false ; // hidden by default
+
+
+ show() {
+  
+  this.isShown = ! this.isShown;
+}
 
 }
